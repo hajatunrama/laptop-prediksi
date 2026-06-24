@@ -11,7 +11,7 @@ st.set_page_config(page_title="IUL Store ML Dashboard", page_icon="💻", layout
 @st.cache_resource
 def load_data():
     pipe = pickle.load(open('pipe.pkl', 'rb'))
- #   df = pickle.load(open('df.pkl', 'rb'))
+    df = pickle.load(open('df.pkl', 'rb'))
     return pipe, df
 
 pipe, df = load_data()
